@@ -1,0 +1,84 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:100);
+body 
+{ 
+	
+	/*background: url( http://i.imgur.com/QXMzwcm.jpg )
+	background: url(http://66.media.tumblr.com/5556ae9adf49f609cd4b32e6f7ef9c1a/tumblr_n5ruxbKKVd1qa7gx5o1_500.gif);*/
+	background: url(https://wallpaperscraft.com/image/milky_way_stars_mountains_night_germany_bavaria_sky_45888_1366x768.jpg);
+	no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+#menu a 
+{
+	display: block;
+	float: left;
+	color:#FFF;
+	text-decoration: none;
+	padding: 0 22px;
+	line-height: 25px;
+}
+
+#menu a:hover 
+{
+	background: #FFF;
+	color : #000000;
+}
+
+p
+{
+	color: white;
+	font-size: 26;
+}
+
+#intestazione::first-letter 
+{
+	font-size: 200%;
+	color: white;
+}
+
+#list
+{
+	text-align: center;
+	height: 90%;
+}
+
+#list-el
+{
+	padding-top: 200;
+}
+
+#list p
+{
+	color: black;
+	font-size: 26;
+}
+
+#quad-bg
+{
+	border-radius: 25px;
+	position: fixed;
+	z-index: -1;
+	left:44%;
+	min-width: 150;
+	min-height: 150;
+	opacity: 0.4;
+}
+
+#quad
+{
+	position: fixed;
+	left:44%;
+	min-width: 150;
+	min-height: 150;
+}
+
+#logo-app
+{
+	width: 64px;
+	height: 64px;
+}

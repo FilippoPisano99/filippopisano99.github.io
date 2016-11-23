@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+
+        <link rel="stylesheet" type="text/css" href="css/stile.css">
+        <link rel="stylesheet" type="text/css" href="../css/main.css">
+        <script type="text/javascript" src="js/script.js"></script>
+        <title>App</title>
+    </head>
+    <body>
+
+    <div class="Barra" id="menu"> <!--Barra del Menu-->
+      <a href="../index.html" id="TitleTab">Home</a>
+      <a href=""  id="SpaceB"> | </a>
+      <a href="../download.html" id="TitleTab">Download</a>
+      <a href=""  id="SpaceB"> | </a>
+      <a href="CalcolatriceJs/calcolatrice.html" id="TitleTab">CalcolatriceJs</a>
+      <!--<a href=""  id="SpaceB"> | </a>-->
+    </div>
+    <br>
+        
+        <div id="contenitore">
+            <!--
+            <h1>App</h1>
+            <br>
+            <p>Questa è una web app basata sul sistema Apache Cordova</p>
+            <h1>Calcolatrice</h1>
+            -->
+            <br>
+            <input type="text" id="textarea" value="">
+            <br>
+            <input type="button" value="7"
+                   onClick="scrivi(7,false)"
+                   id="pulsanti">
+            <input type="button" value="8"
+                   onClick="scrivi(8,false)"
+                   id="pulsanti">
+            <input type="button" value="9"
+                   onClick="scrivi(9,false)"
+                   id="pulsanti">
+            <input type="button" value="+"
+                   onClick="scrivi('+',true)"
+                   id="pulsanti">
+            <br>
+            <input type="button" value="4"
+                   onClick="scrivi(4,false)"
+                   id="pulsanti">
+            <input type="button" value="5"
+                   onClick="scrivi(5,false)"
+                   id="pulsanti">
+            <input type="button" value="6"
+                   onClick="scrivi(6,false)"
+                   id="pulsanti">
+            <input type="button" value="-"
+                   onClick="scrivi('-',true)"
+                   id="pulsanti">
+            <br>
+            <input type="button" value="1"
+                   onClick="scrivi(1,false)"
+                   id="pulsanti">
+            <input type="button" value="2"
+                   onClick="scrivi(2,false)"
+                   id="pulsanti">
+            <input type="button" value="3"
+                   onClick="scrivi(3,false)"
+                   id="pulsanti">
+            <input type="button" value="*"
+                   onClick="scrivi('*',true)"
+                   id="pulsanti">
+            <br>
+            <input type="button" value="0" id="Zero" onClick="scrivi(0,false)">
+            <input type="button" value="/"
+                   onClick="scrivi('/',true)"
+                   id="pulsanti">
+            <br>
+            <input type="button" value="=" id="Uguale" onClick="calcola()">
+            <br>
+            <input type="button" value="Cancella" id="Clear" onClick="cls()">
+            <br>
+        </div>
+        
+        
+    </body>
+
+    <div id="source">
+      <a href="https://github.com/iPisi/iPisi.github.io/tree/master/CalcolatriceJs">Source Code [GitHub.com]</a>
+    </div>
+</html>

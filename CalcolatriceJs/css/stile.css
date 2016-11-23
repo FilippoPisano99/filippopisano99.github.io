@@ -1,0 +1,42 @@
+html
+{/*
+    background-color: #7cafc2;*/
+}
+
+#source
+{/*
+	text-align: right;
+	padding-top: 30%;*/
+	position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+#contenitore
+{
+    text-align: center;    
+}
+
+#pulsanti
+{
+    width: 30px;
+}
+
+
+#Zero
+{
+    width: 98px;
+}
+
+
+#Uguale , #Clear
+{
+    width: 132px;
+}
+
+#textarea
+{
+    height: 50px;
+    width: 132px;
+    
+}
