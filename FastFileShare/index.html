@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>Fast File Share</title>
+	<script src="https://www.gstatic.com/firebasejs/4.1.3/firebase.js"></script>
+	<script type="text/javascript" src="js/util.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+	<style type="text/css">
+
+		* {
+		    box-sizing: border-box;
+		}
+		html, body {
+			text-align: center;
+		    max-width: 100%;
+		    overflow-x: hidden;
+		}
+		img
+		{
+			width: 50%;
+			height: auto;
+			border: dashed 3px red;
+		}
+		#UploadBox
+		{
+			display: inline-table;
+			margin-left: 25%;
+			width: 100%;
+			display: table;
+		}
+		.formBox
+		{
+			width: 50%;
+			padding: 3px;
+			height: 20%;
+			float: left;
+			border: solid 3px;
+			margin: 10px;
+		}
+
+		.formBox *
+		{
+			width: 99%;
+			
+		}
+	</style>
+
+</head>
+<body>
+
+	<div class="Barra" id="menu">	<!--Barra del Menu-->
+		<a href="../index.html" id="TitleTab">Home</a>
+		<a href=""  id="SpaceB"> | </a>
+		<a href="../download.html" id="TitleTab">Download</a>
+		<a href=""  id="SpaceB"> | </a>
+		<a href="../CalcolatriceJs/calcolatrice.html" id="TitleTab">CalcolatriceJs</a>
+		<a href=""  id="SpaceB"> | </a>
+		<a href="../snake/index.html" id="TitleTab">Snake</a>
+		<a href=""  id="SpaceB"> | </a>
+		<a href="index.html" id="TitleTab">Fast File Share</a>
+	</div>
+
+	<br>
+
+	<div id="UploadBox">
+		<form class="formBox"  style="border-color:orange">
+			<p>Scegli file immagine:</p>
+			<input type="file"  id="fileOpener">
+			<br/>
+			<br>
+			<input type="button" value="Carica" onclick="load()">
+		</form>
+		<form class="formBox" style="border-color:red">
+			<p>ID immagine:</p>
+			<input type="text"  id="imgKey">
+			<br/>
+			<br>
+			<input type="button" value="Cerca immagine" onclick="searchBtn()">
+		</form>
+	</div>
+	<br/>
+	<h3 id="alertText" style="color: red"></h3>
+	<h1 id="uid"></h1>
+	<img src="" id="image"> 
+	
+
+	<script>
+		
+		boot();
+		sotrageRef = firebase.storage().ref();
+		
+		if(window.location.href.indexOf("?")!=-1 
+			&& window.location.href.indexOf("?")+1 !=window.location.href.length)
+		{
+			var key =  window.location.href.substring(window.location.href.indexOf("?")+1);
+			search(key)
+		}
+
+		function load() {
+			uid = getRandomKey();
+			document.getElementById("uid").innerHTML = "Codice : " + uid;
+			f = document.getElementById('fileOpener').files[0];
+			sotrageRef.child(uid+"/img.jpg").put(f);
+			setB64Img(f);
+		}
+
+		function search(key) 
+		{
+			var starsRef = sotrageRef.child(key+"/img.jpg");
+			starsRef.getDownloadURL().then(function (url) {
+				document.getElementById('image').src = url;
+			},function (err) {
+				document.getElementById("alertText").innerHTML = "Errore: Codice dell'immagine errato <br>";
+			});
+		}
+
+		function searchBtn() 
+		{
+			var key = document.getElementById('imgKey').value;
+			var starsRef = sotrageRef.child(key+"/img.jpg");
+			starsRef.getDownloadURL().then(function (url) {
+				document.getElementById('image').src = url;
+			},function (err) {
+				document.getElementById("alertText").innerHTML = "Errore: Codice dell'immagine errato <br>";
+			});
+		}
+
+		
+	</script>
+</body>
+</html>
