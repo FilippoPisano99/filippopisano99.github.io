@@ -1,0 +1,161 @@
+*
+{
+	font-family: 'Roboto', sans-serif;
+	font-size: 20px;
+}
+/*
+039be5
+
+ff5722
+*/
+
+:root {
+  --main-color: #ff5722;
+  --second-color:#039be5;
+}
+
+
+body
+{
+	margin: 0;
+}
+#loginBox
+{
+	padding: 8px;
+	background-color: #eee;
+	text-align: center;
+}
+#avatarBox
+{
+	text-align: center;
+	background-color: var(--main-color);
+	box-shadow: 0px 0px 10px 0px #000;
+}/*	border-bottom: solid 10px #027cbf;*/
+#avatarImg
+{
+	background-color: white;
+	border-radius: 50%;
+	width: 	35px;
+	height: 35px;
+	margin-top: 5px;
+	margin-right: 5px;
+	margin-left: 5px;
+}
+#exitImg,#settingsImg,#settingsImgSideBar
+{
+	position: absolute;
+	width: 	35px;
+	height: 35px;
+	right: 0;
+	color: white;
+	margin-top: 5px;
+	margin-right: 5px;
+	margin-left: 5px;
+	z-index: 5;
+}
+
+#addBox
+{
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: #eee;
+	height: 70%;
+	box-shadow: 20px 20px 20px 20px #333;
+	padding: 20px;
+	text-align: center;
+}
+
+
+#addtvBtn
+{
+	position: fixed;
+	width: 45px;
+	height: 45px;
+	border-radius: 50%;
+	font-size: 24px;
+	box-shadow: 0px 0px 8px 0px #000;
+	border-style: none;
+	outline: 0;
+	z-index: 5;
+	bottom: 35px;
+	right: 35px;
+	background-color: var(--main-color);
+	color: #eee;
+}
+
+.materialInput
+{
+	width: 50%;
+	border: none;
+	background-color: #eee;
+	border-bottom: solid var(--main-color);
+	outline: none;
+	margin: 10px;
+	text-align: center;
+}
+.materialButton
+{
+	width: 50%;
+	background-color: var(--main-color);
+	border: solid var(--main-color);
+	outline: none;
+	margin: 10px;
+	color: #eee;
+	border-radius: 3px;
+	max-width: 250px;
+}
+
+#sampleTvImg
+{
+	width: 50%;
+	height: auto;
+	max-height: 200px;
+	max-width: 200px;
+	border: solid 2px #ddd;
+}
+
+#postWall
+{
+	text-align: center;
+}
+
+.tvBox
+{
+	min-width: 300px;
+	display: inline-block;
+	background-color: #eee;
+	text-align: center;
+	padding: 8px;
+	border: 20px;
+	margin: 20px;
+	box-shadow: 0px 0px 8px 0px #000;
+}
+
+.tvImg
+{
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+}
+
+#topBar
+{
+	position: fixed;
+	width: 100%;
+}
+#sideBar
+{
+	position: fixed;
+	background-color: #eee;
+	width: 75%;
+	height: 100%;
+	box-shadow: 0px 0px 8px 0px #000;
+}
+#topSideBar
+{
+	position: fixed;
+	width: 75%;
+	background-color: #aaa;
+}

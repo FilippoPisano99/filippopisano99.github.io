@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Serie Tv 2</title>
+	<script src="https://www.gstatic.com/firebasejs/4.1.3/firebase.js"></script>
+	<script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="js/util.js"></script>
+	<script type="text/javascript" src="js/app.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" type="text/css" href="css/mobile.css"  />
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<style type="text/css">
+		#logBox
+		{
+			max-width: 500px;
+			min-height: 200px;
+			border: solid 3px green; 
+			color: #0f0;
+			font-size: 16px;
+			background-color: #222;
+			padding: 5px;
+		}
+	</style>
+</head>
+<body>
+<div id="topBar">
+	<div id="loginBox">
+		<input type="email" id="emailIn"  class="materialInput"  placeholder="Email">
+		<br/>
+		<input type="password" id="passwordIn"  class="materialInput"  placeholder="Password">
+		<br/>
+		<button class="materialButton" id="loginBtn">LogIn</button>
+		<button class="materialButton" id="signinBtn">SignIn</button>
+	</div>
+	<div id="avatarBox">
+		<img id="settingsImg"  style="left:0;" src="https://maxcdn.icons8.com/Share/icon/p1em/Very_Basic//settings1600.png">
+		<img id="avatarImg" src="https://www.gstatic.com/mobilesdk/160503_mobilesdk/logo/2x/firebase_28dp.png">
+		<img id="exitImg" src="http://freevector.co/wp-content/uploads/2012/08/34696-exit-door-symbol.png">
+	</div>
+</div>
+
+<div id="sideBar">
+	<div id="topSideBar">
+		<img id="settingsImgSideBar"  style="left:0;" src="https://maxcdn.icons8.com/Share/icon/p1em/Very_Basic//settings1600.png">
+	</div>
+
+</div>
+
+<br/>
+<br/>
+
+<div id="logBox">
+	<code id="log"></code>
+</div>
+
+<div id="postWall">
+</div>
+
+
+<button id="addtvBtn">+</button>
+
+<footer>
+	<div id="addBox">
+		<input type="text" 	 id="nometvIn" class="materialInput" placeholder="Nome Serie TV">
+		<input type="number" id="sttvIn" class="materialInput" placeholder="Stagione">
+		<input type="number" id="eptvIn" class="materialInput" placeholder="Episodio">
+		<input type="url"  	 id="imgtvIn" class="materialInput" placeholder="Url immagine">
+		<br/>
+		<img  id="sampleTvImg" onerror="this.src='http://img.theepochtimes.com/n3/eet-content/uploads/2016/03/15/androiddev101.jpg'">
+		<br/>
+		<button id="posttv" class="materialButton" >ADD</button>
+	</div>
+</footer>
+
+</body>
+</html>
