@@ -4,17 +4,26 @@ body
 	
 	/*background: url( http://i.imgur.com/QXMzwcm.jpg )
 	background: url(http://66.media.tumblr.com/5556ae9adf49f609cd4b32e6f7ef9c1a/tumblr_n5ruxbKKVd1qa7gx5o1_500.gif);*/
-	background: url(https://wallpaperscraft.com/image/milky_way_stars_mountains_night_germany_bavaria_sky_45888_1366x768.jpg);
+	/*background: url(https://wallpaperscraft.com/image/milky_way_stars_mountains_night_germany_bavaria_sky_45888_1366x768.jpg);
 	no-repeat center center fixed; 
+	*/
+	background-color: cadetblue;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
 	font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	padding: 0px;
+	margin:0px;
+}
+/*
+#menu{
+	width: 100%;
 }
 
 #menu a 
 {
+	background-color: black;
 	display: block;
 	float: left;
 	color:#FFF;
@@ -82,3 +91,4 @@ p
 	width: 64px;
 	height: 64px;
 }
+*/

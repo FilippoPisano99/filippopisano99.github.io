@@ -1,0 +1,26 @@
+.NavBar{
+    display: flex;
+    flex-flow: row;
+    background-color: black;
+    color: white;
+    justify-content:space-around;
+}
+
+.NabBarItem{
+    text-decoration: none;
+    line-height: 50px;
+    width: 100%;
+    text-align: center;
+}
+.NabBarItem span{
+    text-decoration: none;
+    color: white;
+}
+.NabBarItem:hover{
+    background-color: #fff;
+}
+.NabBarItem:hover span{
+    color: black;
+    font-size: larger;
+    font-weight: bolder;
+}
