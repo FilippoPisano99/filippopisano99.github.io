@@ -9,6 +9,7 @@
 	<link rel="apple-touch-icon" href="/img/icons/icon192.png">
 
 	<script src="https://www.gstatic.com/firebasejs/4.1.3/firebase.js"></script>
+	<script type="text/javascript" src="https://unpkg.com/@zxing/library@latest"></script>
 	<script type="text/javascript" src="js/util.js"></script>
 	
 	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
@@ -58,13 +59,14 @@
 				<div class="cardContent">
 					<form class="formBox" style="border-color:red">
 						<p>Codice:</p>
-						<input type="text"  id="imgKey" value='bkzeentg7'>
+						<input type="text"  id="imgKey">
 						<br/>
 						<br>
 						<input id='DOWNLOAD_BTN' type="button" value="Scarica" onclick="searchBtn()">
 					
 						<h3 id="alertText" style="color: red"></h3>
 						<h1 id="uid"></h1>
+						<div id='QR'></div>
 						<a id="DOWNLOADED_IMG_LINK">Scarica</a>
 						<img src="" id="DOWNLOADED_IMG"> 
 					</form>
@@ -103,6 +105,10 @@
 				document.getElementById('DOWNLOADED_IMG').src = url;
 				document.getElementById('DOWNLOADED_IMG_LINK').href = url;
 				
+				const codeWriter = new ZXing.BrowserQRCodeSvgWriter();
+				let qr_content = window.location.origin+window.location.pathname+'?'+key;
+				codeWriter.writeToDom('#QR',qr_content, 300, 300);
+
 			},function (err) {
 				document.getElementById("alertText").innerHTML = "Errore: Codice dell'immagine errato <br>";
 			});
@@ -121,8 +127,6 @@
 			});
 		}
 
-		document.getElementById('DOWNLOAD_BTN').click();
-		
 	</script>
 	
 </body>
