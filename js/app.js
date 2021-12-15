@@ -20,6 +20,10 @@ var Navbar = Vue.component('Navbar',{
 				{
 					icon:'tv',
 					url:'/serietv/'
+				},
+				{
+					icon:'account_balance_wallet',
+					url:'https://g93fb50e595cd1f-db26hbu.adb.eu-milan-1.oraclecloudapps.com/ords/r/dev/wallet'
 				}
 			]
 		};
