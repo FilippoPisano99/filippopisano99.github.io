@@ -15,15 +15,15 @@ var Navbar = Vue.component('Navbar',{
 				},
 				{
 					icon:'share',
-					url:'/FastFileShare/fastfileshare.html'
+					url:'FastFileShare/fastfileshare.html'
 				},
 				{
 					icon:'tv',
-					url:'/serietv/'
+					url:'serietv/'
 				},
 				{
-					icon:'account_balance_wallet',
-					url:'https://g93fb50e595cd1f-db26hbu.adb.eu-milan-1.oraclecloudapps.com/ords/r/dev/wallet'
+					icon:'face',
+					url:'https://g93fb50e595cd1f-dbfil.adb.eu-milan-1.oraclecloudapps.com/ords/r/base/collectorhub'
 				}
 			]
 		};
@@ -48,9 +48,9 @@ var Cardlist = Vue.component('Cardlist',{
 	data(){
 		return{
 			cards:[{
-				title:'Ciao',
-				img:'/img/batman.gif',
-				content:'rem ipsum dolor sit amet consectetur adipisicing'
+				title:'Github',
+				img:'https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png',
+				content:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec aliquam tellus, ut laoreet leo. Quisque nec accumsan nisl. Curabitur a erat at ipsum volutpat egestas. Sed ultricies augue quis felis varius accumsan. Mauris ullamcorper felis nisl, eget consequat diam tempus vel. Nullam cursus quam ut tortor bibendum, et consectetur tortor convallis. Aliquam bibendum urna sit amet urna congue gravida. Maecenas convallis placerat turpis, ut dictum massa efficitur quis. Praesent iaculis auctor risus, eget dapibus nulla. Sed luctus molestie ex eu feugiat. Phasellus a finibus risus.'
 			}]
 		};
 	}
