@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "export": "next export"
+    "export": "next build"
   },
   "dependencies": {
     "gh-pages": "^6.1.1",
