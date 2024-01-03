@@ -7,6 +7,14 @@ module.exports = {
   ],
   theme: {
     extend: {
+      colors:{
+        primary:"#6d28d9"
+      },
+      fontFamily: {
+        'sans': ['Helvetica', 'Arial', 'sans-serif'],
+        'serif': ['Georgia', 'serif'],
+        'mono': ['Courier', 'monospace'],
+      },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
