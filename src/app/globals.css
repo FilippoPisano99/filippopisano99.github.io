@@ -9,6 +9,7 @@
 }
 
 body {
+  scroll-behavior: smooth;
   color: var(--foreground-rgb);
   background: linear-gradient(
       to bottom,
@@ -16,4 +17,24 @@ body {
       var(--background-end-rgb)
     )
     var(--background-start-rgb);
+}
+
+@layer utilities {
+  
+
+  .snap-y {
+    --scroll-snap-direction: y;
+  }
+
+  .snap-mandatory {
+    --scroll-snap-constraint: proximity;
+  }
+
+  .snap {
+    scroll-snap-type: var(--scroll-snap-direction) var(--scroll-snap-constraint);
+  }
+
+  .snap-start {
+    scroll-snap-align: start;
+  }
 }
