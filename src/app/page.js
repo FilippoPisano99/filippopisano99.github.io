@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import Card from "@/components/card";
 import Navbar from "@/components/navbar";
-import Splashscreen from '@/components/splashScreen';
+import Splashscreen from '@/components/splashscreen';
 import Projectscreen from '@/components/projectScreen';
 
 export default function Home() {
