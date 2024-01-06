@@ -3,20 +3,23 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: #f1f1f1;
-  --background-start-rgb: #353535;
-  --background-end-rgb: #000000;
+  --foreground-rgb: #fff;
+  --background-start-rgb: #000;
+  --background-end-rgb: #000;
 }
 
 body {
   scroll-behavior: smooth;
   color: var(--foreground-rgb);
+  background: #000 url("/bg.jpg") center center/cover no-repeat local;
+  /*
   background: linear-gradient(
       to bottom,
       transparent,
       var(--background-end-rgb)
     )
     var(--background-start-rgb);
+    */
 }
 
 @layer utilities {
